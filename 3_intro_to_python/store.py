@@ -1,3 +1,5 @@
+from category import Category
+
 class Store:
     def __init__(self, name, categories):
         self.name = name
@@ -13,7 +15,8 @@ class Store:
         return store_string
     
 
-my_store = Store("Moe's Groceries", ['alcohol', 'dynamite', 'cough syrup'])
+my_store = Store("Moe's Groceries", 
+                [Category('alcohol'), Category('dynamite'), Category('cough syrup')])
 
 print(my_store)
 selection = ""
