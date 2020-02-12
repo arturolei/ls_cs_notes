@@ -3,7 +3,23 @@ import time
 import csv
 
 def insertion_sort(books):
-    # TO-DO: implement insertion sort
+    # TO-DO: implement insertion sort 
+    # Assume input "books" is a list 
+    # created sorted list with item at index 0 of books
+    # Take next one and start looping over books from index 1 to len(books) - 1 --> For Loop
+        # Compare element to LHS while element is smaller, swap! --> WHile loop
+        # If at front or element not smaller, got to top of loop
+        # This should be done iteratively over the LHS
+    # Grab last element, swap if need be (iterate)
+    for i in range (1, len(books)):
+        #compare each element to LHS, while element is smaller, swap
+        j = i
+        while j >= 1 and books[j].title < books[j-1].title:
+            #swap
+            temp = books[j]
+            book[j] = books[j-1]
+            books[j-1] = temp
+            j-=1
 
     return books
 
@@ -81,3 +97,16 @@ print("Insertion Sort took:  " + str((end - start)*1000) + " milliseconds")
 # sorted_books = book_sort(my_books_long)
 # end = time.time()
 # print("Book Sort took:       " + str((end - start)*1000) + " milliseconds\n")
+
+# Breakout Room, How to Organize?
+#  
+# Bubble Sort (Not the fastest but mentally/physically easiest)
+# 1. Put all books on the shelf 
+# 2. Look at first two. Put book that goes first on left
+# 3. Continue swapping like so until all are swapped
+#
+# Questions:
+# How are these books organized? What is organization of the store? 
+# What is the end goal where are these books going? Broken done into categories? 
+# Are there multiple copies of the same book? (If these are books for college courses)
+# 
