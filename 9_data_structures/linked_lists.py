@@ -10,7 +10,6 @@ import sys
 
 # Complete the reverseArray function below.
 def reverseArray(a):
-    return a[::-1] # Simple solution 
     """
     Approach 3: Manipulate original array
     1. Start outside 
@@ -27,10 +26,10 @@ def reverseArray(a):
     Approach 3:
     for i in range (0, len(a)//2):
         a[i], a[len(a)-i-1] = a[len(a)-i-1], a[i]
-    return a
-
-
+    return 
     """
+    return a[::-1] #simple solution
+  
 """
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
