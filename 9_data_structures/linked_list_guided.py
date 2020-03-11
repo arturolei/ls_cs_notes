@@ -69,7 +69,7 @@ class LinkedList:
         #Need pointer to temporary node (start at the head)
         cur_node = self.head
         while(cur_node.get_next() is not None):
-            #do stuff? 
+            # do stuff? 
             # advance and move to next
             cur_node = cur_node.get_next()
             pass
